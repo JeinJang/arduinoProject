@@ -17,7 +17,8 @@ def get_distance(request):
   else:
     # distance = random.randint(1, 100)
     data = json.loads(request.body)
-    distance = data.get('distance', None)
+    distance = data.get('value', None)
+
     return JsonResponse({
       "distance": distance
     })
