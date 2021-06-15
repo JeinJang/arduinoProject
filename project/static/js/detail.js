@@ -17,7 +17,7 @@ $(document).ready(function () {
 
         setTimeout(()=>{
             $.ajax({
-                url:get_distance,
+                url: get_distance,
                 success: function (data) {
                     dist = data.distance
                 }
