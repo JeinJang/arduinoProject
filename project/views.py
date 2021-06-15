@@ -16,7 +16,8 @@ def get_distance(request):
     return HttpResponse("The url was wrong......so there's nothing we can do:(")
   else:
     # distance = random.randint(1, 100)
-    distance = json.loads(request.body)
+    data = json.loads(request.body)
+    distance = data.get('distance', None)
     return JsonResponse({
       "distance": distance
     })
