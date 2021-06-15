@@ -1,0 +1,36 @@
+body {
+    height: 100%;
+    overflow: hidden;
+}
+
+.main_row {
+    width: 100%;
+}
+
+#push_up_col {
+    background-color: #b32e2e;
+}
+#pull_up_col {
+    background-color: #1e4dc1;
+}
+
+.title_col {
+    height: 70px;
+}
+
+.content_col {
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    padding-top: 100px;
+}
+
+.img_col {
+    display: flex;
+    height: calc(100vh - 170px);
+}
+
+.img_col img {
+    width: 100%;
+    height: auto;
+}

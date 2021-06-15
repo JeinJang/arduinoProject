@@ -1,0 +1,12 @@
+.container, .row, .row>* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    height: 100vh;
+}
+
+.container {
+    max-width: none !important;
+}

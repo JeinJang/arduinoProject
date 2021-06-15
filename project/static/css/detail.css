@@ -1,0 +1,34 @@
+body {
+    background-color: #545454;
+    height: 100vh;
+}
+
+.container {
+    background-color: #545454;
+    color: white;
+    font-size: 100px !important;
+    height: 100vh;
+}
+.detail_row {
+    height: 100%;
+}
+.font-weight-bold {
+    font-weight: bold;
+}
+.button_row {
+    align-items: center;
+}
+#count {
+    font-size: 200px !important;
+}
+#stop_btn {
+    background-color: #b32e2e;
+    color: white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 20px solid #731d1d;
+    border-radius: 999px;
+    padding-left: 50px;
+    padding-right: 50px;
+}

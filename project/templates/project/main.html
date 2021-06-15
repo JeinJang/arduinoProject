@@ -1,0 +1,46 @@
+{% extends 'project/base.html' %}
+{% load static %}
+{% block head %}
+  <link rel="stylesheet" href="{% static 'css/main.css' %}" type="text/css">
+{% endblock %}
+{% block content %}
+<div class="container">
+  <div class="row main_row">
+    <div id="push_up_col" class="col-6 text-center content_col">
+      <div class="row">
+        <div class="col-12 title_col">
+          푸쉬업
+        </div>
+
+        <div class="col-12 img_col mb-auto">
+          <img alt="푸쉬업"
+               class="mt-auto mb-auto"
+               src="{% static 'img/push_up.png' %}"
+          >
+        </div>
+      </div>
+    </div>
+    <div id="pull_up_col" class="col-6 content_col">
+      <div class="row">
+        <div class="col-12 text-center title_col">
+          풀 업
+        </div>
+        <div class="col-12 img_col">
+          <img alt="풀 업"
+               class="mt-auto mb-auto"
+               src="{% static 'img/pull_up.png' %}"
+          >
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+{% endblock %}
+{% block javascript %}
+<script>
+  const pushupLink = "{% url 'detail' pk=1 %}"
+  const pullupLink = "{% url 'detail' pk=2 %}"
+</script>
+<script src="{% static 'js/main.js' %}"></script>
+{% endblock %}

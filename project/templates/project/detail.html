@@ -1,0 +1,35 @@
+{% extends 'project/base.html' %}
+{% load static %}
+{% block head %}
+  <link rel="stylesheet" href="{% static 'css/detail.css' %}" type="text/css">
+{% endblock %}
+{% block content %}
+<div class="container">
+  <div class="row detail_row">
+    <div class="col-12 text-center font-weight-bold mt-auto">
+      {% if pk == 1 %}
+        Push Up
+      {% else %}
+        Pull up
+      {% endif %}
+    </div>
+    <div class="col-12 count_col text-center font-weight-bold">
+      <p id="count">0</p>
+    </div>
+
+    <div class="col-auto button_row ms-auto me-auto mb-auto">
+      <button type="button" id="stop_btn">
+        STOP
+      </button>
+    </div>
+
+  </div>
+</div>
+{% endblock %}
+{% block javascript %}
+<script src="{% static 'js/detail.js' %}"></script>
+<script>
+  const get_distance = '{% url 'get_distance' %}'
+  const pk = {{ pk }}
+</script>
+{% endblock %}
