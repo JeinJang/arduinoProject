@@ -10,6 +10,12 @@ body {
 #push_up_col {
     background-color: #b32e2e;
 }
+#bench_press_col {
+    background-color: #44b882;
+}
+#squat_col {
+    background-color: #e9e161;
+}
 #pull_up_col {
     background-color: #1e4dc1;
 }
@@ -22,15 +28,17 @@ body {
     color: white;
     font-size: 50px;
     font-weight: bold;
-    padding-top: 100px;
+    padding-top: 10px;
 }
 
 .img_col {
     display: flex;
-    height: calc(100vh - 170px);
+    height: calc(50vh - 50px);
 }
 
 .img_col img {
-    width: 100%;
+    width: 50%;
     height: auto;
+    margin-left: auto;
+    margin-right: auto;
 }

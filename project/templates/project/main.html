@@ -20,6 +20,34 @@
         </div>
       </div>
     </div>
+    <div id="bench_press_col" class="col-6 text-center content_col">
+      <div class="row">
+        <div class="col-12 title_col">
+          벤치프레스
+        </div>
+
+        <div class="col-12 img_col mb-auto">
+          <img alt="벤치프레스"
+               class="mt-auto mb-auto"
+               src="{% static 'img/bench_press.png' %}"
+          >
+        </div>
+      </div>
+    </div>
+    <div id="squat_col" class="col-6 text-center content_col">
+      <div class="row">
+        <div class="col-12 title_col">
+          스쿼트
+        </div>
+
+        <div class="col-12 img_col mb-auto">
+          <img alt="스쿼트"
+               class="mt-auto mb-auto"
+               src="{% static 'img/squat.png' %}"
+          >
+        </div>
+      </div>
+    </div>
     <div id="pull_up_col" class="col-6 content_col">
       <div class="row">
         <div class="col-12 text-center title_col">
@@ -40,7 +68,9 @@
 {% block javascript %}
 <script>
   const pushupLink = "{% url 'detail' pk=1 %}"
-  const pullupLink = "{% url 'detail' pk=2 %}"
+  const benchpressLink = "{% url 'detail' pk=2 %}"
+  const squatLink = "{% url 'detail' pk=3 %}"
+  const pullupLink = "{% url 'detail' pk=4 %}"
 </script>
 <script src="{% static 'js/main.js' %}"></script>
 {% endblock %}

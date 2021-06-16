@@ -6,9 +6,15 @@ $(document).ready(function () {
     let indicator = 0;
 
     if (pk == 1) {
-        threshold_low = 90
-        threshold_high = 150
-    } else {
+        threshold_low = 200
+        threshold_high = 250
+    } else if (pk == 2) {
+        threshold_low = 200
+        threshold_high = 250
+    } else if (pk == 3) {
+        threshold_low = 400
+        threshold_high = 500
+    } else if (pk == 4) {
         threshold_low = 90
         threshold_high = 150
     }
